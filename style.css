@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -201,9 +205,13 @@ main {
     width: 25px;
 }
 
+.to{
+    margin-left: 10px;
+}
+
 .to, .from, .date {
     height: 100%;
-    border-right: 1px solid #4a4a4a;
+    border-right: 1px solid rgb(224, 224, 224);;
     display: flex;
     
     align-items: center;
@@ -216,6 +224,30 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.switch{
+    background: rgb(255, 255, 255);
+    left:  522px;
+    top: 240px;
+    color: rgb(107, 107, 107);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 50%;
+    display: flex;
+    padding: 9px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 56;
+    cursor: pointer;
+}
+
+.switch i{
+    font-size: 16px;
+}
+
+.switch:hover{
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Box-shadow effect on hover */
 }
 
 .date {
