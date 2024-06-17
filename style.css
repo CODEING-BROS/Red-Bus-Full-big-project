@@ -19,7 +19,7 @@ html, body {
 
 /* nav section styling */
 section.navbar {
-    height: 6.25rem;
+    height: 6.7rem;
     position: fixed;
     width: 100%;
     z-index: 100; /* Increased z-index */
@@ -30,6 +30,11 @@ section.navbar {
         0px 5px 12px rgba(0, 0, 0, 0.05),
         0px 0px 0px rgba(0, 0, 0, 0.05);
 }
+
+.navbar ul{
+    justify-content: space-around;
+}
+
 
 .navbar ul,
 .ul1,
@@ -55,26 +60,41 @@ li {
 }
 
 .ul1 {
-    gap: 200px;
+    gap: 130px;
 }
 
-.ul3 li {
+.ul3 a {
     width: 105px;
     padding: 5px;
+    color: #4a4a4a;
 }
 
-.ul3 li img {
+a.train:hover{
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.ul3 a img {
+    height: 45px;
+    width: 45px;
+}
+
+a.bus{
+    background-color: #d84e55;
+    color: #fff;
+}
+
+a.train img{
     margin-left: 20px;
-    height: 40px;
-    width: 40px;
+
 }
 
 .ul2 {
-    gap: 50px;
+    gap: 30px;
 }
 
 .ul3 {
-    gap: 20px;
+    gap: 15px;
 }
 
 .ul2 li.help img,
