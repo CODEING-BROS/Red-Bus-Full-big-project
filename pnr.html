@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pnr.css">
+    <link rel="icon" type="image/png" href="./assets/faviconrail.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <title>PNR Status Enquiry -  IRCTC PNR Status Live, Train Ticket Status</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-1">
+            <ul>
+                <li class="logo"><a href="index.html"><img src="./assets/rb_logowhite.svg" alt="Logo"></a></li>
+                <li class="navtext"><a href="index.html">Bus Tickets</a></li>
+                <li class="navtext red-rail"><a href="#">redRail</a></li>
+            </ul>
+            <ul>
+                <li class="navtext">
+                    <img src="https://www.redbus.in/railways/public/images/help.svg" alt="Help Icon">
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <span class="dropdown">
+                        <img src="https://www.redbus.in/railways/public/images/user_profile.svg" alt="User Profile Icon" onclick="toggleDropdown()">
+                        <button class="dropbtn" onclick="toggleDropdown()"><i class="fas fa-chevron-down"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#" class="signup">SignUp / Signin</a>
+                            <a href="#" class="cancel">Cancel Tickets</a>
+                        </div>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="bread-crumb-wrapper">
+                <div class="bread-crumb">
+                    <div class="crumb-link">
+                        <a href="index.html">Home</a>
+                        <img src="https://www.redbus.in/railways/public/images/chevron_right.svg" alt="">
+                    </div>
+                    <div class="crumb-link">
+                        <a href="#">Trains</a>
+                        <img src="https://www.redbus.in/railways/public/images/chevron_right.svg" alt="">
+                    </div>
+                    <div class="crumb-dstn">PNR Status</div>
+                </div>
+            </div>
+
+    <section class="section-1">
+        <div class="container-1">
+            <div class="banner">
+                <div class="logo">
+                    <span class="text">Check PNR Status</span>
+                    <img class="rails-logo" src="https://www.redbus.in/railways/public/images/rails_logo_white.svg" alt="">
+                </div>
+
+                <div class="irctc-logo">
+                    <img src="https://www.redbus.in/railways/public/images/irctc_logo_pnr.svg" alt="">
+                    <span class="irctc">Authorised by <span>IRCTC</span></span>
+                </div>
+
+                <div class="widget">
+                    <div class="wrapper">
+                        <div class="selector" data-value="book-tickets">
+                            <p>Book Train tickets</p>
+                            <div class="radio-btn-outer ">
+                                <div class="radio-btn-inner "></div>
+                            </div>
+                        </div>
+                        <a href="pnr.html" style="text-decoration: none;"  class="selector" data-value="pnr-status">
+                            <p>Check PNR Status</p>
+                            <div class="radio-btn-outer red-outer-border">
+                                <div class="radio-btn-inner red-background"></div>
+                            </div>
+                        </a>    
+                        <a href="live-status.html" style="text-decoration: none;"  class="selector" data-value="live-status">
+                            <p>Live Train Status</p>
+                            <div class="radio-btn-outer">
+                                <div class="radio-btn-inner"></div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+
+                <div class="pnr-input-wrapper">
+                    <input class="pnr-input-text" type="text" placeholder="Enter PNR Number" name="pnrNo" id="" pattern="[0-9]*" inputmode="numeric" value="" fdprocessedid="5d7ial">
+                    <button class=" button  pnr-btn">Check Status</button>
+                </div>
+        </div>
+    </section>
+
+    <div class="margin-top"></div>
+
+    <section class="section-2">
+        <div class="container-2">
+            <div class="heading">Top 10 Trains with Highest Waitlist PNR</div>
+            <div class="train-container-wrapper">
+                <div class="train-container">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="pnr.js"></script>
+</body>
+</html>

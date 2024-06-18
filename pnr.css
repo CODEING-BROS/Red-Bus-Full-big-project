@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+nav.navbar {
+    height: 76px;
+    position: fixed;
+    width: 100%;
+    z-index: 100; /* Increased z-index */
+    background: #d84e55;
+    color: #fff;
+    padding-top: 0.85rem;
+    box-shadow: 
+        0px 86px 34px rgba(0, 0, 0, 0.01),
+        0px 48px 29px rgba(0, 0, 0, 0.03),
+        0px 5px 12px rgba(0, 0, 0, 0.05),
+        0px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.container-1 {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    max-width: 1128px;
+    height: 60.4px;
+    padding-bottom: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav li img {
+    height: 27px;
+    width: 27px;
+}
+
+li.logo a {
+    height: 42px;
+    width: 65px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-1 li {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.75rem;
+}
+
+.navbar{
+    cursor: pointer;
+}
+
+.navtext a {
+    line-height: 0.7rem;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--clr-white);
+    text-decoration: none;
+    padding: 1.65rem 0.5rem;
+}
+
+li.red-rail a {
+    border-bottom: 3px solid #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    top: 19px;
+    right: -18px;
+    padding: 0.9rem 1rem;
+    background: #fff;
+    width: 170px;
+    border-radius: 4px;
+    padding: 1rem;
+    position: absolute;
+    z-index: 200; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.signup,.cancel
+{
+    display: block;
+    color: #3e3e52;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    padding: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.show-drop{
+    display: block;
+}
+
+
+/* section-1 */
+
+
+
+.bread-crumb-wrapper{
+    padding: 8px 0;
+    padding-top: 6.2rem;
+    background: #1d1d1d;
+}
+
+.bread-crumb{
+    display: flex;
+    width: 1128px;
+    background: #1d1d1d;
+    margin: 0 auto;
+}
+
+.crumb-link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.31px;
+    color: #9f9eff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crumb-link a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.31px;
+    color: #9f9eff !important;
+}
+
+.crumb-link img{
+    height: 24px;
+    width: 24px;
+}
+
+.crumb-dstn{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.31px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section-1{
+
+    padding-top: .1rem;
+    background: linear-gradient(0deg,
+     rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+      url('./assets/bannerredrail.png');
+    height: 350px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top:20rem;
+}
+
+.banner .logo{
+    display: flex;
+}
+
+.banner .logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.banner .logo .text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    font-size: 40px;
+    line-height: 120%;
+    color: #fff;
+}
+
+.banner .logo .rails-logo{
+    width: 88px;
+    height: 48px;
+    padding-left: 16px;
+}
+
+.irctc-logo{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    padding-left: 16px;
+}
+
+.irctc-logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.irctc{
+    padding-left: 1rem;
+}
+
+.widget
+{
+    margin-top: 1.5rem;
+}
+
+.wrapper{
+    margin: 2rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+    gap: 2rem;
+}
+
+.selector{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    cursor: pointer;
+    flex-direction: row;
+    padding: 8px 12px;
+    grid-gap: 16px;
+    gap: 30px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #1d1d1d;
+    width: max-content;
+    height: 40px;
+}
+
+.selector p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.radio-btn-outer{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    cursor: pointer;
+    margin-right: unset;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    border: 2px solid #4a4a4a;
+}
+
+.red-outer-border {
+    border: 2px solid #d84e55;
+}
+
+.radio-btn-inner {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.red-background {
+    background: #d84e55 !important;
+}
+
+.pnr-input-wrapper{
+    display: flex;
+    width: 1128px;
+    margin: 0 auto;
+    height: 60px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.pnr-input-text{
+    display: flex;
+    border-radius: 8px 0 0 8px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-image: url(./assets/pnr_icon.svg);
+    background-size: 20px;
+    background-position: 18px;
+    background-repeat: no-repeat;
+    padding-left: 48px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: .125rem;
+}
+
+.pnr-input{
+    border: none;
+    background: #465986;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    grid-gap: 8px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.pnr-btn{
+    padding: 15px 25px;
+    font-weight: 700;
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    cursor: not-allowed;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #d84e55;
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.margin-top {
+    margin-top: 3.3rem;
+}
