@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -143,10 +143,6 @@ li.red-rail a {
 }
 
 
-/* section-1 */
-
-
-
 .bread-crumb-wrapper{
     padding: 8px 0;
     padding-top: 6.2rem;
@@ -218,7 +214,7 @@ li.red-rail a {
 
 .banner .logo{
     display: flex;
-    padding-left: 140px;
+    padding-left: 110px;
 }
 
 .banner .logo img{
@@ -248,7 +244,8 @@ li.red-rail a {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    padding-left: 160px;
+    padding-left: 60px;
+    padding-top: 10px;
     text-align: center;
     color: #fff;
 }
@@ -393,9 +390,6 @@ li.red-rail a {
     border-radius: 0 8px 8px 0;
 }
 
-.margin-top {
-    margin-top: 2rem;
-}
 
 .section-2
 {
@@ -405,7 +399,7 @@ li.red-rail a {
 
 .container-2{
     padding: 32px 0;
-    width: 1128px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -578,17 +572,17 @@ button.availability{
     cursor: pointer;
 }
 
-/* section-3 */
 
 .section-3{
     margin: 0 auto;
-    width: 1128px;
+    width: 1000px;
     background: #fff;
 }
 
 .qsns{
     background: #fff;
     padding: 1rem 1rem 1.25rem;
+    padding-bottom: 20px;
     color: #3e3e52;
     margin-bottom: .25rem;
 }
@@ -596,121 +590,45 @@ button.availability{
 .qsn{
     font-weight: 700;
     font-size: 22px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
     line-height: 28px;
 }
 
 .ans{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 .ans p{
     padding-bottom: 20px;
 }
 
-.ans ol{
-    padding :12px;
-    padding-left :40px;
-    list-style: disc;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-}
-
-.ans ol h1{
-    color: #d84e55;
-    font-weight: 700;
-    font-size: 16px;
-    display: inline;
-    line-height: 40px;
-}
-
-.ans h4{
-    color: #d84e55;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
 .ans h5{
-    color: #d84e55;
-    font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     padding-bottom: 30px;
 }
 
 .ans ul{
     list-style: disc;
-    padding: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
 }
 
 .ans ul h1{
     color: #d84e55;
     font-weight: 700;
     display: inline;
-    font-size: 16px;
-    line-height: 40px;
-}
-
-.tables{
-    display: flex;
-}
-
-.table{
-    padding-right: 30px;
-    width: 50%;
-}
-
-table{
-    border: 1px solid #d1d1d1;
-    border-collapse: collapse;
-}
-
-th{
-    text-align: center;
-    background: #465986;
-    color: #fff;
-    width: 100px;
-    padding: 8px;
-}
-
-td{
-    padding: .5rem;
-    font-size: 12px;
-    line-height: 15px;
-}
-
-th.des{
     font-size: 14px;
-    line-height: 17px;
-    text-align: left;
-    background: #465986;
-    color: #fff;
-    width: 360px;
+    line-height: 35px;
 }
-
-.abbre{
-    
-    background: #faf1f2;
-}
-
-
-td h1{
-    text-align: center;
-    font-size: 12px;
-    line-height: 16px;
-    color: #3e3e52;
-    font-weight: 700;
-}
-
 
 .section-4{
     margin: 0 auto;
-    width: 1128px;
+    width: 1000px;
     background: #fff;
     
 }
@@ -742,13 +660,18 @@ td h1{
 }
 
 .faq-qsn h4{
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 700;
     line-height: 17px;
 }
 
 .faq-qsn i{
     font-size: 22px;
     cursor: pointer;
+}
+
+hr{
+    font-size: 0.5px;
 }
 
 .faq-ans {
@@ -763,10 +686,9 @@ td h1{
     display: block; /* Show the answer when the question is active */
 }
 
-
 .section-5{
     margin: 0 auto;
-    width: 1128px;
+    width: 1000px;
     background: #fff;
     padding-bottom: 50px;
 }
@@ -830,6 +752,7 @@ td h1{
     background: #f1f1f1 !important; /* Set the color of the scrollbar track */
   }
  
+
 
 /* footer */
 
