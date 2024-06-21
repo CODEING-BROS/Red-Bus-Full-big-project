@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+/* nav section styling */
+section.navbar {
+    height: 100px;
+    width: 100%;
+    z-index: 100; /* Increased z-index */
+    background: #fff; /* Add background to ensure visibility */
+    box-shadow: 
+        0px 86px 34px rgba(0, 0, 0, 0.01),
+        0px 48px 29px rgba(0, 0, 0, 0.03),
+        0px 5px 12px rgba(0, 0, 0, 0.05),
+        0px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.navbar ul{
+    justify-content: space-around;
+}
+
+
+.navbar ul,
+.ul1,
+.ul2,
+.ul3 {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.ul2 li:hover, .ul3 li:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar ul {
+    justify-content: space-around;
+    padding-top: 13px;
+}
+
+li {
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+.ul1 {
+    gap: 130px;
+}
+
+.ul3 a {
+    width: 105px;
+    padding: 1em 0.625rem;
+    color: #4a4a4a;
+   
+}
+
+a.train:hover{
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.ul3 a img {
+    height: 20px;
+    width: 45px;
+    margin-bottom: 0.5rem;
+}
+
+a.bus{
+    background-color: #d84e55;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.ul3 .bus img{
+    display: flex;
+    width: 80px;
+    justify-content: center;
+}
+
+a.train img{
+    margin-left: 20px;
+
+}
+
+.ul2 {
+    gap: 30px;
+}
+
+.ul3 {
+    gap: 15px;
+}
+
+.ul2 li.help img,
+.ul2 li.contact img {
+    height: 25px;
+    width: 25px;
+}
+
+.ul2 li.help,
+.ul2 li.contact {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropbtn:hover {
+    background-color: #f0f0f0;
+}
+
+.login {
+    border-top: 1px solid rgba(0, 0, 0, 0.159);
+}
+
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropbtn i {
+    color: #4a4a4a;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    border-radius: 20px;
+    width: 180px;
+    position: absolute;
+    top: 35px;
+    right: -50px;
+    z-index: 200; /* Ensure dropdown is above other elements */
+    background-color: #fff; /* Add background to ensure visibility */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 18px 18px;
+    color: #4a4a4a;
+    text-decoration: none;
+    display: block;
+}
+
+.login:hover {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.cancel:hover{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.show-drop {
+    display: block;
+}
+
+
+/* nav completed */
+.heading h1{
+    margin-bottom: .5em;
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+.cards{
+    width: 70%;
+    height: auto;
+    min-height: 28em;
+    padding-left: 60px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 1px solid #ddd;
+    background: #fff;
+    width: 21em;
+    height: 20em;
+    display: inline-block;
+    zoom: 1;
+    margin: 1em .5em;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .75);
+    position: relative;
+}
+
+.card:hover {
+    animation: bounce 2s;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, .75);
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+
+.card p{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4a4a4a;
+    width: 96%;
+    text-align: center;
+    float: left;
+}
+
+.card img{
+    padding: 10px;
+}
+
+.code{
+    position: absolute;
+    width: 98%;
+    bottom: 8px;
+    right: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+    text-align: right;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.container-9 {
+    color: #3e3e52;width: 100%;
+    padding: 3rem 150px 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 20px;
+}
+
+
+
+.part2{
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 17rem;
+    font-size: 14px;
+}
+
+.link-sec {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.link-sec a{
+    color: #3e3e52;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.link-sec h1{
+    font-size: 1.125rem;
+    color: #1d1d1d;
+    margin: 0;
+}
+
+.part2 img{
+    width: 100PX;
+    height: 65px;
+}
+
+.help a{
+    text-decoration: none;
+    color: #4a4a4a;
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+/* part3 */
+
+.part3{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.part3 .social-icons {
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+/* scroll arrow */
+
+.scroll-arrow {
+    padding: 1rem .5rem .75rem;
+    border: 1px solid #3e3e52;
+    border-radius: 16px;
+    width: 40px;
+    height: 56px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 150px;
+    z-index: 9;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+  }
+
+  .scroll-arrow img{
+    width: 16px;
+    height: 18px;
+  }
+
+  .scroll-arrow:hover {
+    background-color: #f0f0f0;
+  }
+
+
+  /* scrollbar right side */
+
+  /* Styles for the scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+}
